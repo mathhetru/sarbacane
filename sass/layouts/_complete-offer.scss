@@ -1,0 +1,98 @@
+//OFFER BLOCK
+.offer{
+    &-title{
+        font-family: $font-title;
+        font-size: $size-title;
+        text-align: center;
+        margin:92px 0
+    }
+    &-container{
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-container-details{
+        width:556px;
+    }
+    &-container-card{
+        width: 473px;
+        background-color: $grey-discovery;
+        border-radius: 10px;
+    }
+}
+.details{
+    display: block;
+    line-height: 25px;
+    margin: 50px 0;
+    &-title{
+        margin: 0;
+        font-weight: $weight-bold;
+    }
+    &-text{
+        line-height: 25px;
+        margin: 0;
+        font-weight: $weight-light;
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::before{
+        content: "";
+        border-radius: 10px 10px 0 0;
+        background-color: $green;
+        width: 100%;
+        height: 30px;
+    }
+    &-title{
+        margin: 39px 0 25px 0;
+        font-size: $size-title;
+        font-family: $font-title;
+    }
+    &-price{
+        font-size: $size-title;
+        font-family: $font-title;
+        font-weight: $weight-bold;
+    }
+    &-month{
+        font-family: $font-title;
+        font-weight: $weight-light;
+        font-size: 28px;
+    }
+    &-caption{
+        text-align: center;
+        font-size: $font-text;
+        font-weight: $weight-light;
+        line-height: 25px;
+        margin: 20px;
+    }
+    &-details-line{
+        display: flex;
+        align-items: center;
+        margin: 0 0 20px 0;
+        &-check{
+            margin-right: 17px;
+        }
+        &-text{
+            margin:0;
+        }
+        &-IA{
+            @include IA;
+        }
+    }
+    &-choice__btn{
+        @include btn-green;
+    }
+    &-functionnality{
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    &-star{
+        position: relative;
+        top: 30px;
+        color: $grey-text;
+        font-size: 13px;
+    }
+}
