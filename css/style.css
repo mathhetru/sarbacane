@@ -195,7 +195,7 @@
   .offer-container-card {
     margin: 0;
     width: 45%;
-    height: 750px;
+    height: 770px;
   }
   .details {
     margin: 0 0 50px 0;
@@ -265,6 +265,24 @@
   }
   .details-text {
     font-size: 14px;
+  }
+  .card {
+    padding-bottom: 20px;
+  }
+  .card-details-line {
+    margin: 20px;
+  }
+  .card-choice__btn {
+    width: 200px;
+  }
+  .card-functionnality {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .offer-container-card {
+    height: 820px;
   }
 }
 .functionnalities {
