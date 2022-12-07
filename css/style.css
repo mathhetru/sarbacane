@@ -45,6 +45,31 @@
   line-height: 1.8;
 }
 
+@media screen and (max-width: 1350px) {
+  .discovery-block {
+    top: 10%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    margin: 0 80px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .discovery-block {
+    top: 10%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    margin: 0 20px;
+  }
+  .discovery-block-title {
+    font-size: 35px;
+  }
+  .discovery-block-caption {
+    font-size: 35px;
+  }
+  .discovery-block-text {
+    font-size: 12px;
+  }
+}
 .offer-title {
   font-family: "Poppins", sans-serif;
   font-size: 48px;
@@ -110,7 +135,7 @@
 }
 .card-caption {
   text-align: center;
-  font-size: "Inter", sans-serif;
+  font-size: 16px;
   font-weight: 300;
   line-height: 25px;
   margin: 20px;
@@ -141,7 +166,7 @@
 }
 .card-choice__btn-text {
   display: block;
-  font-size: "Inter", sans-serif;
+  font-size: 16px;
   text-align: center;
   color: white;
   padding: 8px;
@@ -156,9 +181,90 @@
   font-size: 13px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1350px) {
   .offer-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+  }
+  .offer-container-details {
+    width: 45%;
+    margin: 0;
+  }
+  .offer-container-card {
+    margin: 0;
+    width: 45%;
+    height: 750px;
+  }
+  .details {
+    margin: 0 0 50px 0;
+  }
+  .card-title {
+    font-size: 35px;
+  }
+  .card-price {
+    font-size: 35px;
+  }
+  .card-month {
+    font-size: 22px;
+  }
+  .card-caption {
+    font-size: 14px;
+  }
+  .card-details-line-text {
+    font-size: 14px;
+    margin: 0;
+  }
+  .card-choice__btn {
+    cursor: pointer;
+    background: #32B13F;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin: 30px auto;
+    width: 260px;
+  }
+  .card-choice__btn-text {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    padding: 8px;
+  }
+  .card-functionnality {
+    font-size: 14px;
+  }
+  .card-star {
+    font-size: 11px;
+    text-align: center;
+    top: 40px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .offer-title {
+    font-size: 35px;
+    margin: 92px 20px;
+  }
+  .offer-container {
+    width: 100%;
     flex-direction: column-reverse;
+  }
+  .offer-container-details {
+    width: 100%;
+    margin: 80px 0;
+  }
+  .offer-container-card {
+    margin: 0 auto 20px auto;
+    width: 90%;
+  }
+  .details {
+    margin: 20px;
+  }
+  .details-title {
+    font-size: 14px;
+  }
+  .details-text {
+    font-size: 14px;
   }
 }
 .functionnalities {
@@ -231,18 +337,65 @@
 }
 .profit__btn-text {
   display: block;
-  font-size: "Inter", sans-serif;
+  font-size: 16px;
   text-align: center;
   color: white;
   padding: 8px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1350px) {
+  .functionnalities {
+    padding-top: 0;
+  }
+  .functionnalities-board {
+    width: 80%;
+  }
   .board-insert {
     flex-direction: column;
+    padding: 20px;
   }
   .board-insert-details {
+    width: 100%;
+    padding: 0;
     align-self: flex-start;
+  }
+  .board-insert-content {
+    padding: 25px 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .board-insert-icon {
+    margin-right: 15px;
+  }
+  .board-insert-title {
+    margin: 0;
+    font-weight: 900;
+    line-height: 25px;
+  }
+  .board-insert-details-line {
+    display: flex;
+    align-items: center;
+    margin: 0 25px 20px 45px;
+  }
+  .board-insert-details-line-text {
+    font-size: 12.5px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .functionnalities {
+    padding-top: 0;
+  }
+  .functionnalities-title {
+    font-size: 35px;
+    margin: 0 0;
+  }
+  .functionnalities-board {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .board-insert {
+    padding: 0px;
   }
 }
 .conditions {
@@ -288,7 +441,7 @@
 }
 .content-btn-green-text {
   display: block;
-  font-size: "Inter", sans-serif;
+  font-size: 16px;
   text-align: center;
   color: white;
   padding: 8px;
@@ -297,6 +450,7 @@
 .content-btn-black {
   display: flex;
   align-items: flex-start;
+  margin-left: 80px;
 }
 .content-btn-black-icon {
   margin-right: 10px;
@@ -313,9 +467,77 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 1350px) {
+  .conditions {
+    flex-direction: column;
+  }
+  .conditions-img {
+    height: 225px;
+  }
+  .conditions-content {
+    background-color: #F6F6F6;
+    padding: 50px 25px;
+  }
+  .conditions-content-title {
+    text-align: center;
+    font-size: 35px;
+  }
+  .conditions-content-text {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .conditions-content-btns {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-btn-black {
+    margin-top: 30px;
+    margin-left: 0;
+    align-items: center;
+  }
+  .content-btn-black-text {
+    font-size: 14px;
+  }
+  .try-sarbacane-img {
+    display: none;
+  }
+}
 @media screen and (max-width: 580px) {
   .conditions {
     flex-direction: column;
+  }
+  .conditions-img {
+    height: 225px;
+  }
+  .conditions-content {
+    background-color: #F6F6F6;
+    padding: 50px 25px;
+  }
+  .conditions-content-title {
+    text-align: center;
+    font-size: 35px;
+  }
+  .conditions-content-text {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .conditions-content-btns {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-btn-black {
+    margin-top: 30px;
+    align-items: center;
+  }
+  .content-btn-black-text {
+    font-size: 14px;
+  }
+  .try-sarbacane-img {
+    display: none;
   }
 }
 * {

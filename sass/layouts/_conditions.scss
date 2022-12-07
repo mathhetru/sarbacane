@@ -38,6 +38,7 @@
 .content-btn-black{
     display: flex;
     align-items: flex-start;
+    margin-left:80px;
     &-icon{
         margin-right: 10px;
     }
@@ -53,9 +54,81 @@
     background-size: cover;
 }
 
+// BREAKPOINT TABLET CONDITIONS
+@media screen and (max-width: 1350px) {
+    .conditions{
+        flex-direction: column;
+        &-img{
+            height:225px;
+        }
+        &-content{
+            background-color: $grey-functionnality;
+            padding: 50px 25px;
+            &-title{
+                text-align: center;
+                font-size: $size-title-mobile;
+            }
+            &-text{
+                width: 100%;
+                text-align: center;
+                font-size: $size-text-mobile;
+            }
+        }
+        &-content-btns{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+    .content-btn-black{
+        margin-top: 30px;
+        margin-left: 0;
+        align-items: center;
+        &-text{
+            font-size: $size-text-mobile;
+        }
+    }
+    .try-sarbacane-img{
+        display: none;
+    }
+}
+
 // BREAKPOINT MOBILE CONDITIONS
 @media screen and (max-width: 580px) {
     .conditions{
         flex-direction: column;
+        &-img{
+            height:225px;
+        }
+        &-content{
+            background-color: $grey-functionnality;
+            padding: 50px 25px;
+            &-title{
+                text-align: center;
+                font-size: $size-title-mobile;
+            }
+            &-text{
+                width: 100%;
+                text-align: center;
+                font-size: $size-text-mobile;
+            }
+        }
+        &-content-btns{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    }
+    .content-btn-black{
+        margin-top: 30px;
+        align-items: center;
+        &-text{
+            font-size: $size-text-mobile;
+        }
+    }
+    .try-sarbacane-img{
+        display: none;
     }
 }

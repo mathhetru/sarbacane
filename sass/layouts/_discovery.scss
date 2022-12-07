@@ -37,7 +37,7 @@
         &-caption{
             margin:10px 0 0 0;
             font-family: $font-title;
-            font-size: $size-caption;
+            font-size: $size-title;
             font-weight: $weight-light;
         }
         &-text{
@@ -49,9 +49,34 @@
 }
 
 // BREAKPOINT TABLET DISCOVERY
-@media screen and (max-width: 1350px) {}
+@media screen and (max-width: 1350px) {
+    .discovery{
+        &-block{
+            top: 10%;
+            left: 0%;
+            transform: translate(-0%, -0%);
+            margin: 0 80px;
+        }
+    }
+}
 
 // BREAKPOINT MOBILE DISCOVERY
 @media screen and (max-width: 580px) {
-
+.discovery{
+    &-block{
+        top: 10%;
+        left: 0%;
+        transform: translate(-0%, -0%);
+        margin: 0 20px;
+        &-title{
+            font-size: $size-title-mobile;
+        }
+        &-caption{
+            font-size: $size-title-mobile;
+        }
+        &-text{
+            font-size: 12px;
+        }
+    }
+}
 }

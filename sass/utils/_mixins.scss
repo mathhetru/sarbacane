@@ -1,5 +1,5 @@
 //BTN
-@mixin btn-green ($margin: 30px auto) {
+@mixin btn-green ($margin: 30px auto, $size: $size-text) {
     cursor:pointer;
     background: $green;
     border-radius: 5px;
@@ -7,7 +7,7 @@
     margin: $margin;
     &-text{
         display: block;
-        font-size: $font-text;
+        font-size: $size;
         text-align: center;
         color: white;
         padding: 8px;

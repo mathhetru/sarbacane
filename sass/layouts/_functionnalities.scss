@@ -58,12 +58,61 @@
     @include btn-green
 }
 
-// BREAKPOINT MOBILE FUNCTIONNALITIES
-@media screen and (max-width: 580px) {
+// BREAKPOINT TABLET FUNCTIONNALITIES
+@media screen and (max-width: 1350px) {
+    .functionnalities{
+        padding-top: 0;
+        &-board{
+            width: 80%;
+        }
+    }
     .board-insert{
         flex-direction: column;
+        padding: 20px;
         &-details{
+            width: 100%;
+            padding: 0;
             align-self: flex-start;
         }
+        &-content{
+            padding: 25px 10px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+        }
+        &-icon{
+            margin-right: 15px;
+        }
+        &-title{
+            margin:0;
+            font-weight: $weight-bold;
+            line-height: 25px;
+        }
+        &-details-line{
+            display: flex;
+            align-items: center;
+            margin:0 25px 20px 45px;
+            &-text{
+                font-size: 12.5px;
+            }
+        }
+    }
+}
+
+// BREAKPOINT MOBILE FUNCTIONNALITIES
+@media screen and (max-width: 580px) {
+    .functionnalities{
+        padding-top: 0;
+        &-title{
+            font-size: $size-title-mobile;
+            margin:0 0;
+        }
+        &-board{
+            margin-top: 20px;;
+            width: 90%;
+        }
+    }
+    .board-insert{
+        padding: 0px;
     }
 }
