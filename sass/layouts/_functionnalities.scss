@@ -57,3 +57,13 @@
     width: 180px;
     @include btn-green
 }
+
+// BREAKPOINT MOBILE FUNCTIONNALITIES
+@media screen and (max-width: 580px) {
+    .board-insert{
+        flex-direction: column;
+        &-details{
+            align-self: flex-start;
+        }
+    }
+}

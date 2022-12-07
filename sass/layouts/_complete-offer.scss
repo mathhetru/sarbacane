@@ -95,3 +95,12 @@
         font-size: 13px;
     }
 }
+
+// BREAKPOINT MOBILE OFFER
+@media screen and (max-width: 580px) {
+    .offer{
+        &-container{
+            flex-direction: column-reverse;
+        }
+    }
+}

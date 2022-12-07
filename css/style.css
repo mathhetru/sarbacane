@@ -156,6 +156,11 @@
   font-size: 13px;
 }
 
+@media screen and (max-width: 580px) {
+  .offer-container {
+    flex-direction: column-reverse;
+  }
+}
 .functionnalities {
   padding-top: 100px;
 }
@@ -232,6 +237,14 @@
   padding: 8px;
 }
 
+@media screen and (max-width: 580px) {
+  .board-insert {
+    flex-direction: column;
+  }
+  .board-insert-details {
+    align-self: flex-start;
+  }
+}
 .conditions {
   display: flex;
   margin-top: 100px;
@@ -300,6 +313,11 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 580px) {
+  .conditions {
+    flex-direction: column;
+  }
+}
 * {
   box-sizing: border-box;
 }

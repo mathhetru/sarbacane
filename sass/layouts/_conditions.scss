@@ -52,3 +52,10 @@
     height: 100%;
     background-size: cover;
 }
+
+// BREAKPOINT MOBILE CONDITIONS
+@media screen and (max-width: 580px) {
+    .conditions{
+        flex-direction: column;
+    }
+}
