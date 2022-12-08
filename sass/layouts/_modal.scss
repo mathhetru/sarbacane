@@ -1,0 +1,44 @@
+//MODAL BLOCK
+.bg-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+.modal-rdv{
+    position: relative;
+    margin: 20% auto;
+    width: 100%;
+    height:300px;
+    max-width: 500px;
+    background-color: $grey-discovery;
+    border-radius: 10px;
+    padding-top: 10px;
+    &-close{
+        cursor: pointer;
+        margin:0;
+        font-size: 20px;
+        position: absolute;
+        right: 15px;
+        top:15px;
+    }
+    &-title{
+        text-align: center;
+        font-size: $size-title-mobile;
+    }
+    &-btn{
+        width: 200px;
+        @include btn-green
+    }
+}
+// BREAKPOINT MOBILE MODAL
+@media screen and (max-width: 580px) {
+    .modal-rdv{
+        max-width: 300px;
+    }
+}
