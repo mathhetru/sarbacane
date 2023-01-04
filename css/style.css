@@ -615,6 +615,7 @@
 }
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 * a {
@@ -623,7 +624,6 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
   width: 100%;
   margin: auto;
 }

@@ -11,13 +11,13 @@
 // ELEMENTS PRINCIPAUX
 * {
     box-sizing: border-box;
+    font-family: $font-text;
 }
 * a {
     text-decoration: none;
     color: black;
 }
 body{
-    font-family: $font-text;
     width: 100%;
     margin: auto;
 }
